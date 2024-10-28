@@ -10,6 +10,7 @@ data = {
 }
 df = pd.DataFrame(data)
 
+
 # Features and target
 X = df[['age', 'salary']]
 y = df['payback']
