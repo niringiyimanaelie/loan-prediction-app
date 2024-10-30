@@ -1,9 +1,14 @@
 import unittest
 import pickle
+try:
+    from zoneinfo import ZoneInfo
+except ImportError:
+    from backports.zoneinfo import ZoneInfo
+
+import pandas as pd
+
 import pandas as pd
 from app import app
-import backports.zoneinfo as zoneinfo
-import pandas as pd
 
 # Load the trained logistic regression model
 model = pickle.load(open('loan_model.pkl', 'rb'))
