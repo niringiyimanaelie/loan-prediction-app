@@ -1,12 +1,5 @@
 import unittest
 import pickle
-try:
-    from zoneinfo import ZoneInfo
-except ImportError:
-    from backports.zoneinfo import ZoneInfo
-
-import pandas as pd
-
 import pandas as pd
 from app import app
 

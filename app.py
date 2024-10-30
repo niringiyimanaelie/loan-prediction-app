@@ -1,10 +1,5 @@
 from flask import Flask, request, jsonify, render_template
 import pickle
-try:
-    from zoneinfo import ZoneInfo
-except ImportError:
-    from backports.zoneinfo import ZoneInfo
-    
 import pandas as pd
 
 app = Flask(__name__)
